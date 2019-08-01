@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -23,48 +23,45 @@
     <!-- jQuery CDN -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    
-</head>
-<body>
-    
+  </head>
+  <body>
     <div class="container">
-        <br />
-        <div class="jumbotron text-center bg-dark text-white">
-          <h1 class="title">GIFTastic</h1>
-          <p class="lead">Welcome to GIFTastic!</p>
-          <p class="subtitle">Click to animate, and have fun!</p>
+      <br />
+      <div class="jumbotron text-center bg-dark text-white">
+        <h1 class="title">GIFTastic</h1>
+        <p class="lead">Welcome to GIFTastic!</p>
+        <p class="subtitle">Click to animate, and have fun!</p>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-7">
+          <div id="animalButtons"></div>
         </div>
 
-        <div class="row">
-            <div class="col-sm-7">
-              <div id="topicButtons"></div>
+        <div class="col-sm-5">
+          <form id="form" action="">
+            <div class="form-group">
+              <input
+                type="name"
+                class="form-control"
+                id="userTopic"
+                placeholder="Add new GIF"
+              />
             </div>
-    
-            <div class="col-sm-5">
-              <form id="form" action="">
-                <div class="form-group">
-                  <input
-                    type="name"
-                    class="form-control"
-                    id="userTopic"
-                    placeholder="Add new GIF"
-                  />
-                </div>
-                <button id="newGif" class="btn btn-dark">
-                  Add
-                </button>
-              </form>
-            </div>
-          </div>
-    
-          <br />
-    
-          <div id="animalsDiv" class="row"></div>
+            <button id="newGif" class="btn btn-dark">
+              Add
+            </button>
+          </form>
         </div>
+      </div>
+
+      <br />
+
+      <div id="animalsDiv" class="row"></div>
+    </div>
 
     <!-- JS link -->
-    
-  <script src="assets/js/app.js"></script>
 
-</body>
+    <script src="assets/js/app.js"></script>
+  </body>
 </html>
