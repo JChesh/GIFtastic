@@ -1,6 +1,10 @@
 /* Hello */
- .subjectButton{
+.subjectButton{
     margin: 2px;
     border-radius: 4px;
 
+ }
+
+ .card{
+     margin-bottom: 40px;
  }
